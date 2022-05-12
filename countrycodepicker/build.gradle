@@ -1,8 +1,7 @@
 apply plugin: 'com.android.library'
 
-group = 'com.github.joielechong'
-version = "2.4.2"
-def verCode = 242
+version = "1.0.1"
+def verCode = 2
 
 android {
     compileSdkVersion 32
