@@ -186,6 +186,7 @@ public class CountryCodePicker extends RelativeLayout {
             applyCustomPropertyOfDefaultCountryNameCode(a);
 
             showFlag(a.getBoolean(R.styleable.CountryCodePicker_ccp_showFlag, true));
+            showSelectedCountry(a.getBoolean(R.styleable.CountryCodePicker_ccp_showSelectedCountry, true));
 
             applyCustomPropertyOfColor(a);
 
@@ -1081,6 +1082,10 @@ public class CountryCodePicker extends RelativeLayout {
     public void showFlag(boolean showFlag) {
         mShowFlag = showFlag;
         mLlyFlagHolder.setVisibility(showFlag ? VISIBLE : GONE);
+    }
+
+    public void showSelectedCountry(boolean showSelectedCountry) {
+        mTvSelectedCountry.setVisibility(showSelectedCountry ? VISIBLE : GONE);
     }
 
     /**
