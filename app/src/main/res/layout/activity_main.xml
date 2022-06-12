@@ -15,4 +15,18 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.yehia.reda.countrycodepicker.CountryCodePicker
+        android:id="@+id/layout_edit_text_cc_country_code"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="9dp"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="9dp"
+        app:ccp_showFlag="true"
+        app:ccp_showSelectedCountry="false"
+        app:ccp_textSize="9dp"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

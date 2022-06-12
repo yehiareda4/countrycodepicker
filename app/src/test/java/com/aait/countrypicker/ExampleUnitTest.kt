@@ -1,4 +1,4 @@
-package com.aait.countrycodepicker
+package com.aait.countrypicker
 
 import org.junit.Test
 

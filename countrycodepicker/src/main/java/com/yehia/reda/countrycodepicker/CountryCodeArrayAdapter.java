@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 import java.util.Locale;
 
@@ -102,12 +104,22 @@ public class CountryCodeArrayAdapter extends ArrayAdapter<Country> {
             viewHolder.tvCode.setTypeface(typeface);
             viewHolder.tvName.setTypeface(typeface);
         }
-        viewHolder.imvFlag.setImageResource(CountryUtils.getFlagDrawableResId(country));
+        if (country.getImage().isEmpty()) {
+            loadImageFromUrl(ctx, viewHolder.imvFlag, country.getImage());
+        } else {
+            viewHolder.imvFlag.setImageResource(CountryUtils.getFlagDrawableResId(country));
+        }
         int color = mCountryCodePicker.getDialogTextColor();
         if (color != mCountryCodePicker.getDefaultContentColor()) {
             viewHolder.tvCode.setTextColor(color);
             viewHolder.tvName.setTextColor(color);
         }
+    }
+
+    private void loadImageFromUrl(Context context, ImageView imageView, String url) {
+        Glide.with(context)
+                .load(url)
+                .into(imageView);
     }
 
     private Locale getLocale(String iso) throws NullPointerException {

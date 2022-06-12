@@ -6,11 +6,20 @@ public class Country {
     private final String iso;
     private final String phoneCode;
     private final String name;
+    private final String image;
 
     public Country(String iso, String phoneCode, String name) {
         this.iso = iso;
         this.phoneCode = phoneCode;
         this.name = name;
+        this.image = "";
+    }
+
+    public Country(String iso, String phoneCode, String name, String image) {
+        this.iso = iso;
+        this.phoneCode = phoneCode;
+        this.name = name;
+        this.image = image;
     }
 
     public String getIso() {
@@ -23,6 +32,10 @@ public class Country {
 
     public String getName() {
         return name;
+    }
+
+    public String getImage() {
+        return image;
     }
 
     /**

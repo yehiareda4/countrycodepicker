@@ -1,4 +1,4 @@
-package com.aait.countrycodepicker
+package com.aait.countrypicker
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

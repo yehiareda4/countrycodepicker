@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/flag_indonesia" />
+
     </LinearLayout>
 
     <TextView

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2564814814814815" />
         <entry key="countrycodepicker/src/main/res/layout/country_code_picker_item_country.xml" value="0.2833333333333333" />
         <entry key="countrycodepicker/src/main/res/layout/country_code_picker_layout_code_picker.xml" value="0.2833333333333333" />
         <entry key="countrycodepicker/src/main/res/layout/country_code_picker_layout_picker_dialog.xml" value="0.2833333333333333" />
