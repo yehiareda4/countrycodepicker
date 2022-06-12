@@ -447,7 +447,7 @@ public class CountryCodePicker extends RelativeLayout {
     /**
      * this will load mPreferredCountries based on mCountryPreference
      */
-    void refreshCustomMasterList() {
+    public void refreshCustomMasterList() {
         if (mCustomMasterCountries == null || mCustomMasterCountries.length() == 0) {
             mCustomMasterCountriesList = null;
             return;
